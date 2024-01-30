@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // title
+       let title = document.title = 'Curriculum Vitae';
+        // Favi
+
+       let favi  = document.createElement('link');
+       favi.rel = 'icon';
+       favi.type = 'image/x-icon';
+        favi.href = 'data:image/png;base64,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';
+        document.head.appendChild(favi);
+        //body
+        let body = document.body;
+        body.style.backgroundColor = '#BAD7E9';
+        body.style.fontFamily="Arial, sans-serif";
+        // div
+        let div = document.createElement("div");
+        body.append(div);
+        div.style.display = "flex";
+        div.style.alignItems = "center";
+        div.style.flexDirection = "column"
+                // Cv Title
+        let titleHead = document.createElement('header');
+        let titleText = document.createTextNode("Hamza Saeed"); 
+        titleHead.appendChild(titleText);
+        div.appendChild(titleHead);
+        titleHead.style.fontSize='40px';
+        //=== image
+        let image = document.createElement('img');
+        image.src = 'Picture_page-0001.jpg';
+        image.style.paddingTop="13px";
+        image.style.borderRadius ='50px';
+        div.appendChild(image);
+        //  data
+        let heading = document.createElement("h2");
+        let headText = document.createTextNode("Qualification")
+        heading.appendChild(headText);
+        body.appendChild(heading);
+        heading.style.display='flex';
+        heading.style.justifyContent='center';
+        let divv = document.createElement("div");
+        let tab = document.createElement("table");
+        divv.appendChild(tab);
+        //---------------------------------------- row 1
+        let row = document.createElement("tr");
+        let td = document.createElement("td");
+        let tx = document.createTextNode("Matric");
+        let td1 = document.createElement("td");
+        let tx1 = document.createTextNode("2013");
+        // -------------------- row 2
+        let row1 = document.createElement("tr");
+        let td2 = document.createElement("td");
+        let tx2 = document.createTextNode("Intermetiade");
+        let td3 = document.createElement("td");
+        let tx3 = document.createTextNode("2017");
+        // --------------------- row 3
+        let row2 = document.createElement("tr");
+        let td4 = document.createElement("td");
+        let tx4 = document.createTextNode("Bachelor");
+        let td5 = document.createElement("td");
+        let tx5 = document.createTextNode("2021");
+        // -------------------- row 4
+        let row3 = document.createElement("tr");
+        let td6 = document.createElement("td");
+        let tx6 = document.createTextNode("Master");
+        let td7 = document.createElement("td");
+        let tx7 = document.createTextNode("Continue...");
+
+        //---------------------------------------- row 1
+
+        tab.appendChild(row);
+        row.appendChild(td);
+        td.appendChild(tx);
+        row.appendChild(td1);
+        td1.appendChild(tx1);
+        // -------------------- row 2
+        tab.appendChild(row1);
+        row1.appendChild(td2);
+        td2.appendChild(tx2);
+        row1.appendChild(td3);
+        td3.appendChild(tx3);
+        // -------------------- row 3
+        tab.appendChild(row2);
+        row2.appendChild(td4);
+        td4.appendChild(tx4);
+        row2.appendChild(td5);
+        td5.appendChild(tx5);
+        // -------------------- row 4
+        tab.appendChild(row3);
+        row3.appendChild(td6);
+        td6.appendChild(tx6);
+        row3.appendChild(td7);
+        td7.appendChild(tx7);
+
+    // style table
+        divv.style.display='flex';
+        divv.style.justifyContent = 'center';
+        divv.style.border = '3px solid';
+    body.appendChild(divv);
+
+       // Hobby
+       //heading
+       let hobbyHead = document.createElement('h2');
+       let hobby = document.createTextNode("Hobbies & Interest");
+       body.appendChild(hobbyHead);
+       hobbyHead.appendChild(hobby);
+       hobbyHead.style.display = 'flex';
+       hobbyHead.style.justifyContent = 'center';
+       //hobby body
+       for (let i = 1; i < 2; i++){
+        let hobbyItem = document.createElement('p');
+        let brea = document.createElement("br");
+        let txt = document.createTextNode("Programming");
+        let brea1 = document.createElement("br");
+        let txt1 = document.createTextNode("Sportman");
+        let brea2 = document.createElement("br");
+        let txt2 = document.createTextNode("Reading Books");
+        let brea3 = document.createElement("br");
+
+        let txt3 = document.createTextNode("E-Gamming");
+        let brea4 = document.createElement("br");
+
+        let txt4 = document.createTextNode("Exploring new things");
+
+        hobbyItem.appendChild(txt);
+        hobbyItem.appendChild(brea);
+        hobbyItem.appendChild(txt1);
+        hobbyItem.appendChild(brea1);
+        hobbyItem.appendChild(txt2);
+        hobbyItem.appendChild(brea2);
+        hobbyItem.appendChild(txt3);
+        hobbyItem.appendChild(brea3);
+        hobbyItem.appendChild(txt4);
+        hobbyItem.style.display = 'flex';
+        hobbyItem.style.justifyContent = 'center';
+
+        body.appendChild(hobbyItem);
+
+       }
+       //reference
+       //heading
+       let ref = document.createElement("h2");
+       let refHead = document.createTextNode("Reference");
+       ref.appendChild(refHead);
+       body.appendChild(ref);
+       // reference contant
+       let text = document.createElement("p");
+       let pp = document.createTextNode("Avaiable on request");
+       text.appendChild(pp);
+       body.appendChild(text);
+       ref.style.display = 'flex';
+       ref.style.justifyContent = 'center';
+       text.style.display = 'flex';
+       text.style.justifyContent = 'center';
+// =-----------------------------------------
+
+    </script>
+    <!--  -->
+
+
+<!--    body.appendChild(titleHead);
+        titleHead.style.display = 'flex';
+        titleHead.style.justifyContent = 'center'; -->
+
+
+        <!--body.appendChild(image);
+              image.style.padding = '10px';
+        image.style.paddingLeft = '500px'; -->
+</body>
+</html>
